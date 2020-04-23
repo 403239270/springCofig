@@ -1,6 +1,6 @@
 server:
   port: 21204
-  servlet:d
+  servlet:
     context-path: /
 sysinit:
   jdbc:
