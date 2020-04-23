@@ -4,7 +4,7 @@ server:
     context-path: /
 sysinit:
   jdbc:
-    url: jdbc:mysql://192.168.88.132/yyf_sss?useSSL=FALSE&serverTimezone=UTC
+    url: hello git
     username: root
     password: RuXocrvFg1#E
     driver: com.mysql.cj.jdbc.Driver
