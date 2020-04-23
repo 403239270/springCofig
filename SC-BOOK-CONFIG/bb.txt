@@ -1,5 +1,10 @@
 ﻿dsdadas
 hello git
+<<<<<<< HEAD
 >>>>>>> Stashed changes
 
 我去出
+=======
+
+fsfa
+>>>>>>> e7fa98332186e18c0965b3df9a5a6d3b11d35fa9
