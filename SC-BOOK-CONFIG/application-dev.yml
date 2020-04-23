@@ -5,10 +5,10 @@ server:
 
 sysinit:
   jdbc:
-    url: jdbc:mysql://192.168.1.122/yyf_sss?useSSL=FALSE&serverTimezone=UTC
-    username: root
-    password: RuXocrvFg1#E
-    driver: com.mysql.cj.jdbc.Driver
+    url: j11111111111
+    username: 11111111111
+    password: 111111111
+    driver: 1111111
 
 
 spring:
