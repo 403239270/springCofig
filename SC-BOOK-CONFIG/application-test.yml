@@ -1,0 +1,59 @@
+server:
+  port: 9180
+  servlet:
+    context-path: /yswmg
+
+sysinit:
+  jdbc:
+    url: jdbc:mysql://139.196.252.241:3306/yyf_sss?useUnicode=true&characterEncoding=utf8&autoReconnect=true&useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: Yyf:123456
+    driver: com.mysql.cj.jdbc.Driver
+
+logging:
+  path: /home/tomcat/resource/bbc/log/${sysconfig.key}
+  level:
+    console: info
+
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      minimum-idle: 3
+      auto-commit: true
+      idle-timeout: 10000
+      pool-name: DatebookHikariCP
+      max-lifetime: 1800000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
+    master:
+      username: root
+      password: Yyf:123456
+      jdbc-url: jdbc:mysql://139.196.252.241:3306/yyf_sss_goods?useUnicode=true&characterEncoding=utf8&autoReconnect=true&useSSL=false&serverTimezone=GMT%2B8&allowMultiQueries=true
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    slave:
+      username: root
+      password: Yyf:123456
+      jdbc-url: jdbc:mysql://139.196.252.241:3306/yyf_sss_goods?useUnicode=true&characterEncoding=utf8&autoReconnect=true&useSSL=false&serverTimezone=GMT%2B8&allowMultiQueries=true
+      driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 7963
+    password: yyf098rty
+    timeout: 10000
+    pool:
+      max-active: 8
+      max-wait: 800
+      max-idle: 8
+      min-idle: 2
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8380/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    lease-renewal-interval-in-seconds: 2
+    lease-expiration-duration-in-seconds: 4
