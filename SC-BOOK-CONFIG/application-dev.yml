@@ -5,8 +5,8 @@ server:
 
 sysinit:
   jdbc:
-    url: j11111111111
-    username: 11111111111
+    url: 22222222
+    username: 222222222222222222222
     password: 111111111
     driver: 1111111
 
